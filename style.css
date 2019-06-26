@@ -1,0 +1,108 @@
+html {box-sizing: border-box;}
+*,
+*::after,
+*::before {box-sizing: inherit;}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat400';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/montserrat-v13-latin/montserrat-v13-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('/fonts/montserrat-v13-latin/montserrat-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/montserrat-v13-latin/montserrat-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/montserrat-v13-latin/montserrat-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/montserrat-v13-latin/montserrat-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('/fonts/montserrat-v13-latin/montserrat-v13-latin-regular.svg#Montserrat') format('svg');/* Legacy iOS */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat700';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/montserrat-v13-latin/montserrat-v13-latin-700.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('/fonts/montserrat-v13-latin/montserrat-v13-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/montserrat-v13-latin/montserrat-v13-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/montserrat-v13-latin/montserrat-v13-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/montserrat-v13-latin/montserrat-v13-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/montserrat-v13-latin/montserrat-v13-latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+
+  /* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/roboto-slab-v8-latin/roboto-slab-v8-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+         url('/fonts/roboto-slab-v8-latin/roboto-slab-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/roboto-slab-v8-latin/roboto-slab-v8-latin-regular.woff2') format('woff2'),/* Super Modern Browsers */
+         url('/fonts/roboto-slab-v8-latin/roboto-slab-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/roboto-slab-v8-latin/roboto-slab-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/roboto-slab-v8-latin/roboto-slab-v8-latin-regular.svg#RobotoSlab') format('svg');/* Legacy iOS */
+  }
+
+  /* eb-garamond-italic - latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/fonts/eb-garamond-v10-latin/eb-garamond-v10-latin-italic.eot'); /* IE9 Compat Modes */
+  src: local('EB Garamond Italic'), local('EBGaramond-Italic'),
+       url('/fonts/eb-garamond-v10-latin/eb-garamond-v10-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/eb-garamond-v10-latin/eb-garamond-v10-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/eb-garamond-v10-latin/eb-garamond-v10-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/eb-garamond-v10-latin/eb-garamond-v10-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/eb-garamond-v10-latin/eb-garamond-v10-latin-italic.svg#EBGaramond') format('svg'); /* Legacy iOS */
+}
+img {display: block;}
+
+.container{width: 940px; margin: 0 auto;padding: 0;}
+
+.menu{display: inline-flex; justify-content: space-between; width: inherit; margin-bottom: 120px;}
+
+.menu-list{display: inline-flex;list-style: none; }
+.menu-list-link{text-decoration: none;margin: 0 1rem; text-transform: uppercase; font-size: 14px;font-family: 'Montserrat400'; color: #000000;}
+.menu-list-link:hover{color: #fed136;}
+
+.services-topic{display: block; text-align: center; margin-bottom: 78px;}
+.services-topic h1 {margin:0 0 18px; font-size: 40px; text-transform: uppercase; font-family: 'Montserrat700', sans-serif;}
+.services-topic h2 {margin: 0; font-size: 16px;font-family: 'EB Garamond';}
+.services{display: flex;  justify-content: space-between; width: inherit; }
+.services-list{width: 290px;text-align: center;height: 190px; overflow: hidden;margin-bottom: 102px;} 
+.services-list-point {display: inline-block;width: 74px;height: 74px;  background-repeat: no-repeat; background-position: center; border-radius: 50%;border-style: solid; border-width: 3px; border-color: #fed136;margin-bottom: 20px;}  
+.services-list h2{font-size: 18px;font-family: 'Montserrat700', sans-serif;margin: 0 0 14px;}
+.services-list h3{font-size: 14px;font-family: 'Roboto Slab'; color: #777777; }
+.services-list-icon1{ background-image: url(images/Icon-Basket.png);}
+.services-list-icon2{ background-image: url(images/Icon-Laptop.png);}
+.services-list-icon3{ background-image: url(images//Icon-Locked.png);}
+.services-list h3{margin: 0;height: 78px;}
+
+.back-layout{position: absolute; left: 0; width: 100%;background-size: cover; background-color: #222222; z-index: -1;}
+
+.contact-topic{display: block;text-align: center;color:#fff;}
+.contact-topic h2 {margin: 0 0 24px;padding-top: 110px; text-transform: uppercase; font-size: 40px;font-family: 'Montserrat700', sans-serif;}
+.contact-topic h3 {margin:0 0 78px; font-size: 16px;font-family: 'EB Garamond';}
+
+.contact {display: flex;justify-content: center;}
+.contact-info {display: flex;flex-direction: column;}
+.contact-info input {width: 456px;height: 52px;margin-bottom: 28px;margin-right:1rem;font-family: 'Montserrat700', sans-serif;}
+.contact-info-message {width: 456px;height: 212px;margin-left: 1rem;font-family: 'Montserrat700', sans-serif;}
+
+.send{display:block; margin: 0 auto; border: none; padding: 0; width: 240px;height: 66px;background-color: #fed136;font-family: 'Montserrat700', sans-serif;font-size: 18px;text-transform: uppercase; color: #fff;}
+
+.contact-info-line2:valid {outline:3px solid darkcyan;}
+.contact-info-line2:invalid{outline:3px solid crimson;}
+
+.contact-info-line1:valid{outline:3px solid darkcyan;}
+.contact-info-line1:invalid{outline:3px solid crimson;}
+
+.contact-info-message:valid{outline:3px solid darkcyan;}
+.contact-info-message:invalid{outline:3px solid crimson;}
+
+
+
+
+
